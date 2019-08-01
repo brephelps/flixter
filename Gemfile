@@ -63,4 +63,20 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'bootstrap', '~> 4.3.1'
 
+gem 'popper_js', '~> 1.14.3'
 gem 'jquery-rails'
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-tether', '>= 1.3.3'
+end
+
+gem 'kaminari'
+gem 'simple_form'
+gem 'font-awesome-rails'
+gem 'devise'
+
+gem "geocoder"
+gem "figaro"
+
+gem 'carrierwave', '>= 2.0.0.rc', '< 3.0'
+gem 'fog-aws'
