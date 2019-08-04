@@ -27,7 +27,7 @@ body {
   background: image_url('dark-paths.png');
 }
 
-.navbar-inverse a.navbar-brand {
+.navbar-inverse a.navbar-brand, .nav-link {
   font-family: 'Raleway', sans-serif;
   font-weight: 100;
   color: white;
@@ -88,6 +88,26 @@ h1, h2, h3, h4, h5, h6, .navbar {
   width: 100%;
   padding-left: 5%;
   padding-right: 5%;
+}
+
+#flex-content-container {
+  flex: 1;
+}
+
+#footer {
+  position: relative;
+  width: 100%;
+  min-height: 100px;
+  background-color: rgba(36, 32, 33, 0.9);
+  color: white;
+  padding: 10px 0px;
+  font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-top: 30px;
+}
+
+#footer a {
+  color: white;
+  font-weight: 100;
 }
 
 
