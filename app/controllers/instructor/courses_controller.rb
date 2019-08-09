@@ -6,6 +6,10 @@ class Instructor::CoursesController < ApplicationController
      @course = Course.new
   end
 
+  def index
+    redirect_to new_instructor_course_path
+  end
+
   def create
     @course = current_user.courses.create(course_params)
     if @course.valid?
