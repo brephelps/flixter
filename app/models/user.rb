@@ -13,7 +13,8 @@ class User < ApplicationRecord
     'Hufflepuff': 'hufflepuff'
   }
 
-  def humanized_house
-    HOUSES.invert[self.rating]
+  def house_selection
+    HOUSES.invert[self.house]
   end
+
 end

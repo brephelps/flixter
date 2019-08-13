@@ -1,1 +1,22 @@
-Profile
+<% if current_user.house == 'gryffindor' %>
+  <div class ='gryffindor'>
+  </div>
+<% end %>
+
+
+<% if current_user.house == 'slytherin' %>
+  <div class ='slytherin'>
+  </div>
+<% end %>
+
+
+<% if current_user.house == 'ravenclaw' %>
+  <div class ='ravenclaw'>
+  </div>
+<% end %>
+
+
+<% if current_user.house == 'hufflepuff' %>
+  <div class ='hufflepuff'>
+  </div>
+<% end %>
