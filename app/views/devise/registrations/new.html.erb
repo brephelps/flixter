@@ -16,6 +16,7 @@
       <%= f.input :password_confirmation,
                   required: true,
                   input_html: { autocomplete: "new-password" } %>
+      <%= f.input :house, as: :select, collection: User::HOUSES %>
     </div>
     <br />
     <div class="form-actions">
