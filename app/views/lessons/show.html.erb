@@ -4,5 +4,9 @@
   <h1><%= current_lesson.title %></h1>
   <p>
     <%= current_lesson.subtitle %>
+    <br>
+    <% if current_lesson.video.present? %>
+      <%= link_to 'Video', current_lesson.video.to_s %>
+    <% end %>
   </p>
 </div>
