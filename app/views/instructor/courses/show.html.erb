@@ -21,8 +21,10 @@
           <% section.lessons.each do |lesson| %>
             <li>
               <b><%= lesson.title %></b>
-              -
-              <%= lesson.subtitle %>
+              <% if lesson.subtitle != '' %>
+                -
+                <%= lesson.subtitle %>
+              <% end %>
             </li>
           <% end %>
         </ul>
