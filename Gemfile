@@ -75,10 +75,12 @@ gem 'simple_form'
 gem 'font-awesome-rails'
 gem 'devise'
 
-gem "geocoder"
-gem "figaro"
+gem 'geocoder'
+gem 'figaro'
 
 # gem 'carrierwave', '>= 2.0.0.rc', '< 3.0'
 gem 'carrierwave-aws'
 # gem 'fog-aws'
-gem "mini_magick"
+gem 'mini_magick'
+
+gem 'stripe'
