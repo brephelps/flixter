@@ -1,8 +1,7 @@
 class LessonsController < ApplicationController
   before_action :authenticate_user!
-  # before_action :enrolled_in?
-  # has_many :enrolled_users, through: :enrollments, source: :users
   before_action :require_enrolled_users, only: [:show]
+
 
   def show
   end

@@ -5,6 +5,7 @@ ruby '2.5.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
+gem 'jquery-rails'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
@@ -64,7 +65,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'bootstrap', '~> 4.3.1'
 
 gem 'popper_js', '~> 1.14.3'
-gem 'jquery-rails'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
@@ -82,5 +82,5 @@ gem 'figaro'
 gem 'carrierwave-aws'
 # gem 'fog-aws'
 gem 'mini_magick'
-
 gem 'stripe'
+gem 'ranked-model'
