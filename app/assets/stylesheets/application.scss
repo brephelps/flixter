@@ -83,8 +83,23 @@ h1, h2, h3, h4, h5, h6, .navbar {
   text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
 }
 
+.image {
+  text-align: center;
+}
+
 .btn {
   border-radius: 0;
+}
+
+.badge {
+  font-family: 'IM Fell Great Primer SC', serif;
+  font-size: 20px;
+}
+
+.badge-default {
+  font-family: 'IM Fell Great Primer SC', serif;
+  font-size: 20px;
+  color: green;
 }
 
 .feature {
