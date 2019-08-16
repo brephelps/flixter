@@ -16,9 +16,11 @@
  *= require_self
  *= require_tree .
  *= require jquery-ui
+ *= require font-awesome
  */
 
 @import "bootstrap";
+@import "font-awesome";
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer+SC&display=swap');
 
@@ -33,41 +35,6 @@ body {
   font-weight: 200;
   box-shadow: 0px 1px 3px #2a2a2a;
   background: image_url('dark-paths.png');
-}
-
-.gryffindor {
-  font-family: 'IM Fell Great Primer SC', serif;
-  font-weight: 200;
-  box-shadow: 0px 1px 3px #2a2a2a;
-  background-color: #ae0001;
-  // #d3a625
-}
-
-.slytherin {
-  font-family: 'IM Fell Great Primer SC', serif;
-  font-weight: 200;
-  box-shadow: 0px 1px 3px #2a2a2a;
-  background: image_url('dark-paths.png');
-  // #2a623d
-  // #5d5d5d
-}
-
-.hufflepuff {
-  font-family: 'IM Fell Great Primer SC', serif;
-  font-weight: 200;
-  box-shadow: 0px 1px 3px #2a2a2a;
-  background: image_url('dark-paths.png');
-  // #f0c75e
-  // #726255
-}
-
-.ravenclaw {
-  font-family: 'IM Fell Great Primer SC', serif;
-  font-weight: 200;
-  box-shadow: 0px 1px 3px #2a2a2a;
-  background: image_url('dark-paths.png');
-  // #222f5b
-  // #946b2d
 }
 
 .navbar-inverse a.navbar-brand, .nav-link {
@@ -203,6 +170,105 @@ h1, h2, h3, h4, h5, h6, .navbar {
   border: 1px solid;
   border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
   padding: 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.section-li {
+  border: 1px solid;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  padding: 20px;
+  margin: 10px;
+}
+
+ul .header {
+  font-size: 25px;
+}
+
+ul .header .fa {
+  font-size: 20px;
+}
+
+.lesson-li {
+  background: black;
+  color: white;
+  margin: 10px;
+  font-family: 'IM Fell Great Primer SC', serif;
+  font-weight: 100;
+  padding: 8px;
+  font-size: 15px;
+}
+
+.lessons li b {
+  font-size: 25px;
+  font-weight: 100;
+}
+
+.lessons li p {
+  margin: 0;
+}
+
+
+.gryffindor {
+  background: #7F0909;
+  color: #FFC500;
+  margin: 10px;
+  font-family: 'IM Fell Great Primer SC', serif;
+  font-weight: 100;
+  padding: 8px;
+  font-size: 20px;
+}
+
+.gryffindor a {
+  text-align: center;
+  color: #FFC500;
+}
+
+.slytherin {
+  background: #1a472a;
+  color: #AAAAAA;
+  margin: 10px;
+  font-family: 'IM Fell Great Primer SC', serif;
+  font-weight: 100;
+  padding: 8px;
+  font-size: 20px;
+}
+
+.slytherin a {
+  text-align: center;
+  color: #AAAAAA;
+}
+
+.hufflepuff {
+  background: #ecb939;
+  color: #000000;
+  margin: 10px;
+  font-family: 'IM Fell Great Primer SC', serif;
+  font-weight: 100;
+  padding: 8px;
+  font-size: 20px;
+}
+
+.hufflepuff a {
+  text-align: center;
+  color: #000000;
+}
+
+.ravenclaw {
+  background: #1d2a54;
+  color: #946B2D;
+  margin: 10px;
+  font-family: 'IM Fell Great Primer SC', serif;
+  font-weight: 100;
+  padding: 8px;
+  font-size: 20px;
+}
+
+.ravenclaw a {
+  text-align: center;
+  color: #946B2D;
 }
 
 
