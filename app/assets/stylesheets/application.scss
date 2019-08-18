@@ -24,8 +24,13 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer+SC&display=swap');
 
+html, body {
+  height: 100%;
+}
 
 body {
+  display: flex;
+  flex-direction: column;
   background: image_url('bg.png');
   font-family: 'IM Fell Great Primer SC', serif;
 }
@@ -117,10 +122,11 @@ h1, h2, h3, h4, h5, h6, .navbar {
 }
 
 #flex-content-container {
-  flex: 1;
+  flex: 1 0 auto;
 }
 
-#footer {
+.footer {
+  flex-shrink: 0;
   position: relative;
   width: 100%;
   min-height: 100px;
@@ -129,11 +135,20 @@ h1, h2, h3, h4, h5, h6, .navbar {
   padding: 10px 0px;
   font-family: 'IM Fell Great Primer SC', serif;
   margin-top: 30px;
+  font-weight: 100;
 }
 
-#footer a {
+.footer a {
   color: white;
   font-weight: 100;
+}
+
+.social-button {
+  margin: 4px;
+}
+
+.social a:hover {
+  text-decoration: none;
 }
 
 .help-block {
@@ -210,6 +225,10 @@ ul .header .fa {
   margin: 0;
 }
 
+.team-pic {
+  width: 150px;
+  height: 185px;
+}
 
 .gryffindor {
   background: #7F0909;

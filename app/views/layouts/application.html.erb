@@ -57,11 +57,47 @@
       <%= yield %>
     </div>
 
-    <div id="footer">
+    <div class="footer">
       <div class="container">
-        <b>Professors</b>
-        <br />
-        <%= link_to 'Teach a Course', new_instructor_course_path %>
+        <div class="row">
+          <div class="col-sm-3 col-12">
+            <u>Professors</u>
+            <br />
+            <%= link_to 'Teach a Course', new_instructor_course_path %>
+            <br />
+            <%= link_to 'My Dashboard', dashboard_path %>
+          </div>
+          <div class="col-sm-3 col-12">
+            <u>About</u>
+            <br />
+            <%= link_to 'Team', team_path %>
+            <br />
+            <%= link_to 'Careers', careers_path %>
+            <br />
+            <%= link_to 'Privacy Policy', privacy_path %>
+          </div>
+          <div class="col-sm-3 col-12">
+            <u>Contact</u>
+            <br />
+            Platform 9 3/4
+            <br />
+            London, England
+          </div>
+          <div class="col-sm-3 col-12 social">
+            <u>Social</u>
+            <br />
+            <br />
+            <%= link_to 'http://github.com/brephelps/flixter' do %>
+              <span class="fa fa-github-square fa-2x social-button"></span>
+            <% end %>
+            <%= link_to 'http://facebook.com' do %>
+              <span class="fa fa-facebook-square fa-2x social-button"></span>
+            <% end %>
+            <%= link_to 'http://twitter.com' do %>
+              <span class="fa fa-twitter-square fa-2x social-button"></span>
+            <% end %>
+          </div>
+        </div>
       </div>
     </div>
 
