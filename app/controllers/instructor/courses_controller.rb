@@ -21,6 +21,7 @@ class Instructor::CoursesController < ApplicationController
 
   def show
     @section = Section.new
+    @lesson = Lesson.new
   end
 
   private
@@ -34,6 +35,10 @@ class Instructor::CoursesController < ApplicationController
   helper_method :current_course
   def current_course
     @current_course ||= Course.find(params[:id])
+  end
+
+  def current_section
+    @current_section ||= Section.find(params[:id])
   end
 
   def course_params
