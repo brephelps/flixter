@@ -11,47 +11,51 @@
     <div class="ravenclaw">
   <% end %>
 
-    <h1>What I'm Learning</h1>
-    <% current_user.enrolled_courses.each do |course| %>
-      <h3 class="text-center">
-        <%= link_to course.title, course_path(course) %>
-      </h3>
-      <br />
-      <div class="image">
-        <%= image_tag course.image.url, class: 'img-fluid' %>
-      </div>
-      <br />
-      <div class="row">
-        <div class="col-12 col-sm-7 offset-1">
-          <%= course.description %>
+    <% if current_user.enrolled_courses.present? %>
+      <h1>What I'm Learning</h1>
+      <% current_user.enrolled_courses.each do |course| %>
+        <h3 class="text-center">
+          <%= link_to course.title, course_path(course) %>
+        </h3>
+        <br />
+        <div class="image">
+          <%= image_tag course.image.url, class: 'img-fluid' %>
         </div>
-        <div class="col-12 col-sm-4 text-center">
-          <%= link_to "More Info...", course_path(course), class: 'btn btn-lg btn-dark' %>
+        <br />
+        <div class="row">
+          <div class="col-12 col-sm-7 offset-1">
+            <%= course.description %>
+          </div>
+          <div class="col-12 col-sm-4 text-center">
+            <%= link_to "More Info...", course_path(course), class: 'btn btn-lg btn-dark' %>
+          </div>
         </div>
-      </div>
-      <hr class="col-8 offset-2">
-      <br class="clr" />
+        <hr class="col-8 offset-2">
+        <br class="clr" />
+      <% end %>
     <% end %>
-    <h1>What I'm Teaching</h1>
-    <% current_user.courses.each do |course| %>
-      <h3 class="text-center">
-        <%= link_to course.title, course_path(course) %>
-      </h3>
-      <br />
-      <div class="image">
-        <%= image_tag course.image.url, class: 'img-fluid' %>
-      </div>
-      <br />
-      <div class="row">
-        <div class="col-12 col-sm-7 offset-1">
-          <%= course.description %>
+    <% if current_user.courses.present? %>
+      <h1>What I'm Teaching</h1>
+      <% current_user.courses.each do |course| %>
+        <h3 class="text-center">
+          <%= link_to course.title, course_path(course) %>
+        </h3>
+        <br />
+        <div class="image">
+          <%= image_tag course.image.url, class: 'img-fluid' %>
         </div>
-        <div class="col-12 col-sm-4 text-center">
-          <%= link_to "More Info...", course_path(course), class: 'btn btn-lg btn-dark' %>
+        <br />
+        <div class="row">
+          <div class="col-12 col-sm-7 offset-1">
+            <%= course.description %>
+          </div>
+          <div class="col-12 col-sm-4 text-center">
+            <%= link_to "More Info...", course_path(course), class: 'btn btn-lg btn-dark' %>
+          </div>
         </div>
-      </div>
-      <hr class="col-8 offset-2">
-      <br class="clr" />
+        <hr class="col-8 offset-2">
+        <br class="clr" />
+      <% end %>
     <% end %>
   </div>
 </div>
